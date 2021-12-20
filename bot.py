@@ -124,6 +124,16 @@ async def about(bot, update):
         disable_web_page_preview=True,
         reply_markup=ABOUT_BUTTONS
     )
+@Bot.on_message(filters.private & filters.command("status"), group=5)
+async def status(bot, update):
+    total_users = await db.total_users_count()
+    text = "**Music Bot Status**\n"
+    text += f"\n**Total Users hit start:** `{total_users}`"
+    await update.reply_text(
+        text=text,
+        quote=True,
+        disable_web_page_preview=True
+    )
 
 broadcast_ids = {}
 
