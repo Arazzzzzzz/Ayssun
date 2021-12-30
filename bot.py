@@ -1,6 +1,10 @@
 # This Repo was not fully owned by me. Some codes are scraped from respected DEVOLEPERS whom where mine friends. 
 # check Readme.md For More. 
 
+from __future__ import unicode_literals
+from yt_dlp import YoutubeDL
+
+
 import logging
 logger = logging.getLogger(__name__)
 import os, re, time, math, json, string, random, traceback, wget, asyncio, datetime, aiofiles, aiofiles.os, requests, youtube_dl, lyricsgenius, wget
