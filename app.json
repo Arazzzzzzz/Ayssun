@@ -36,6 +36,14 @@
         "SUPPORT": {
             "description": "Your support chat Username Without @",
             "value": "NAZRIYASUPPORT"
+        }, 
+        "bat": {
+            "description": "Your support chat Username Without @",
+            "value": "NAZRIYASUPPORT"
+        }, 
+        "bn": {
+            "description": "Your support chat Username Without @",
+            "value": "NAZRIYASUPPORT"
         }
     },
     "addons": [],
