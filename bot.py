@@ -3,9 +3,6 @@
 
 from __future__ import unicode_literals
 
-from yt_dlp import YoutubeDL
-Iisie
-Iis
 import logging
 logger = logging.getLogger(__name__)
 import os, re, time, math, json, string, random, traceback, wget, asyncio, datetime, aiofiles, aiofiles.os, requests, youtube_dl, lyricsgenius, wget
@@ -15,8 +12,6 @@ from pyrogram import Client, filters
 from youtube_search import YoutubeSearch
 from youtubesearchpython import VideosSearch
 from yt_dlp import YoutubeDL
-
-
 from database import Database
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, InlineQuery, InlineQueryResultArticle, InputTextMessageContent
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
