@@ -37,11 +37,11 @@
             "description": "Your support chat Username Without @",
             "value": "NAZRIYASUPPORT"
         }, 
-        "bat": {
+        "BOT_NAME": {
             "description": "Your support chat Username Without @",
             "value": "NAZRIYASUPPORT"
         }, 
-        "bn": {
+        "BOT_USERNAME": {
             "description": "Your support chat Username Without @",
             "value": "NAZRIYASUPPORT"
         }
