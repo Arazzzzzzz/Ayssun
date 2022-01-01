@@ -31,7 +31,7 @@ A BOT TO DOWNLOAD SONGS FROM YOUTUBE.
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
-<a href="https://heroku.com/deploy?template=https://github.com/MR-JINN-OF-TG/Song-Downloader-Bot">
+<a href="https://heroku.com/deploy?template=https://github.com/MR-JINN-OF-TG/Song-Downloader">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
