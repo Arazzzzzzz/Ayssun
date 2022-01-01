@@ -198,7 +198,7 @@ def song(_, message):
         )
         m.delete()
     except Exception as e:
-        m.edit("❌ Error Contact [support Group]("https://t.me/{Config.SUPPORT})") 
+        m.edit("❌ Error Contact support Group") 
         print(e)
 
     try:
