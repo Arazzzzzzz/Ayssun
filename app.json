@@ -36,6 +36,14 @@
         "SUPPORT": {
             "description": "Your support chat Username Without @",
             "value": "NAZRIYASUPPORT"
+        }, 
+        "BOT_NAME": {
+            "description": "your Bot name ",
+            "value": "Song Downloader bot"
+        }, 
+        "BOT_USERNAME": {
+            "description": "Your bot Username Without @",
+            "value": "NazriyaSongBot"
         }
     },
     "addons": [],
