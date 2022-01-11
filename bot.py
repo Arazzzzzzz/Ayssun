@@ -343,14 +343,7 @@ async def download_song(url):
 
 def time_to_seconds(times):
     stringt = str(times)
-    return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(":"))))YoutubeSearch(query, тσ ∂αтαвαѕє...ρℓєαѕє ωαιт..!")
-    try:,
-
-
-
-
-
-
+    return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(":"))))
 
 
 
