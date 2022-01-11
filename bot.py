@@ -166,7 +166,7 @@ ydl_opts = {
 }
 
 
-@Client.on_message(command(["song","aud"]) & ~filters.edited)
+@Bot.on_message(command(["song","aud"]) & ~filters.edited)
 def song(_, message):
     query = " ".join(message.command[1:])
     m = message.reply("🔎 Sᴇᴀʀᴄʜɪɴɢ Sᴏɴɢ ᴏɴ Yᴏᴜᴛᴜʙᴇ..! ./n **Upload Getting Slowed due to Heavy Traffic** [Learn More](https://en.m.wikipedia.org/wiki/Network_traffic)")
@@ -207,7 +207,7 @@ def song(_, message):
         )
         m.delete()
     except Exception as e:
-        m.edit("❌ Error Contact [ƈɾҽαƚσɾ](https://t.me/{own})")
+        m.edit("❌ Error Contact [ƈɾҽαƚσɾ](https://t.me/NazriyaSupport)")
         print(e)
 
     try:
@@ -536,5 +536,6 @@ async def vsong(client, message):
     except Exception as e:
         print(e)
 	
-
+Bot.run()
+												  
 												  
