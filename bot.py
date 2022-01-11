@@ -166,7 +166,7 @@ ydl_opts = {
 }
 
 
-@Bot.on_message(command(["song","aud"]) & ~filters.edited)
+@Bot.on_message(filters.command(["song","aud"]) & ~filters.edited)
 def song(_, message):
     query = " ".join(message.command[1:])
     m = message.reply("🔎 Sᴇᴀʀᴄʜɪɴɢ Sᴏɴɢ ᴏɴ Yᴏᴜᴛᴜʙᴇ..! ./n **Upload Getting Slowed due to Heavy Traffic** [Learn More](https://en.m.wikipedia.org/wiki/Network_traffic)")
@@ -482,7 +482,7 @@ async def broadcast_(c, m):
     await aiofiles.os.remove('broadcast.txt')
 
 @Bott.on_message(
-    command(["vsong", "video"]) & ~filters.edited
+    filters.command(["vsong", "video"]) & ~filters.edited
 )
 async def vsong(client, message):
     ydl_opts = {
