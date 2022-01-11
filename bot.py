@@ -240,7 +240,6 @@ def a(client, message):
 
 
 
-"]
 
 
 
