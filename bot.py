@@ -481,7 +481,7 @@ async def broadcast_(c, m):
     
     await aiofiles.os.remove('broadcast.txt')
 
-@Bott.on_message(
+@Bot.on_message(
     filters.command(["vsong", "video"]) & ~filters.edited
 )
 async def vsong(client, message):
