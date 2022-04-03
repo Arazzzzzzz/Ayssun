@@ -1,59 +1,51 @@
 {
-    "name": "Song-Downloader-Bot",
-    "description": "A BOT TO DOWNLOAD MUSIC FROM YOUTUBE.",
-    "logo": "https://telegra.ph/file/745badebb188c6da28a67.jpg",
-    "stack": "container",
+    "name": "Song-Downloader",
+    "description": "A Bot To Download Songs and Videos From YouTube",
     "keywords": [
-        "song",
-        "youtube",
-        "Telegram",
-        "nazriya"
+        "YouTube",
+        "Music",
+        "video"
     ],
-    "website": "https://github.com/MR-JINN-OF-TG",
     "repository": "https://github.com/MR-JINN-OF-TG/Song-Downloader",
-    "success_url": "https://t.me/NAZRIYASUPPORT",
+    "website": "https://github.com/MR-JINN-OF-TG",
+    "success_url": "https://github.com/MR-JINN-OF-TG",
     "env": {
-        "BOT_TOKEN": {
-            "description": "Your Telegram Bot Token from @BotFather",
-            "value": ""
+        "API_ID ": {
+            "description": "Get It From my.telegram.org",
+            "required": "True"
         },
-        "API_HASH": {
-            "description": "Your API Hash from my.telegram.org",
-            "value": ""
+        "API_HASH ": {
+            "description": "Get It From my.telegram.org",
+            "required": "True"
         },
-        "API_ID": {
-            "description": "Your API ID from my.telegram.org",
-            "value": ""
-        }, 
-        "OWNER_ID": {
-            "description": "Your id for broadcasting messages to users. Only you can broadcast message.",
-            "value": ""
+        "BOT_TOKEN ": {
+            "description": "Get It From @botfather",
+            "required": "True"
         },
-        "DB_URI": {
-            "description": "Your database url from mongodb.",
-            "value": ""
-        }, 
-        "SUPPORT": {
-            "description": "Your support chat Username Without @",
-            "value": "NAZRIYASUPPORT"
-        }, 
-        "BOT_NAME": {
-            "description": "your Bot name ",
-            "value": "Song Downloader bot"
-        }, 
-        "BOT_USERNAME": {
-            "description": "Your bot Username Without @",
-            "value": "NazriyaSongBot"
+        "OWNER_ID ": {
+            "description": "Enter Your Id (For Broadcast)",
+            "required": "True"
+        },
+        "DB_URI ": {
+            "description": "For as Database Get it from https",
+            "required": "True",
+            "value": "//cloud.mongodb.com/"
+        },
+        "SUPPORT ": {
+            "description": "Your Bot Support Group.",
+            "required": "True"
         }
     },
-    "addons": [],
+    "stack": "container",
     "buildpacks": [
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    },
-    {
-      "url": "heroku/python"
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
         }
-      ]
-   }
-    
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
